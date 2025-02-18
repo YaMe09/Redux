@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redux Lemonade</title>
+    <style>
+        #root {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        * {
+            font-family: Clicker;
+        }
+        .lemonade-stand {
+            background-color: lightgoldenrodyellow;
+            border-radius: 10px;
+            width: 100%;
+            height: 550px;
+            box-shadow: #717f36 0 0 10px;
+            display: block;
+            text-align: center;
+            align-items: center;
+            margin: 15px;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+            margin: 0;
+            padding: 1.5em;
+            justify-content: center;
+            align-items: center;
+        }
+        .button {
+            margin-top: 10px;
+            background-color: rgb(17, 132, 17);
+            color: white;
+            border-radius: 20% ;
+            padding: 0.8em 3.5em;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; font-family: Clicker ;">
+    <div class="lemonade-stand">
+        <h1>Lemonade Stand 🍋</h1>
+        <h2>Lager</h2>
+        <h5><span id="lager">50</span></h5>
+        <button class="button" onClick="store.dispatch(actionA)">
+            Sælg  🍋
+        </button>
+        <h2>Lemon</h2>
+        <h5><span id="lemon">0</span></h5>
+        <button class="button" onClick="store.dispatch(actionB)">
+            Køb  🍋
+        </button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"></script>
+    <script src="./Redux.js"></script>
+</body>
+</html>
